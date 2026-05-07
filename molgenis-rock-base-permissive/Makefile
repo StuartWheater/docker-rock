@@ -5,7 +5,7 @@
 docker_compose_file=docker-compose.yml
 no_cache=true
 name=datashield/molgenis-rock-base-permissive
-tag=4.0.0
+tag=4.1.0
 
 # Build Docker image
 build-image:
