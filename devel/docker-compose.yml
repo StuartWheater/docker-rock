@@ -1,6 +1,6 @@
 services:
   rock-devel:
-    image: datashield/rock_devel:1.1.0
+    image: datashield/rock_devel:2.0.0
     #build: .
     ports:
       - ${PORT}:8085

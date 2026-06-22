@@ -4,10 +4,10 @@
 # https://github.com/datashield/docker-rock
 #
 
-# Use 'datashield/rock_devel:1.1.0'
-FROM datashield/rock_devel:1.1.0
+# Use 'datashield/rock_devel:2.0.0'
+FROM datashield/rock_devel:2.0.0
 
-ENV DSBASE_VERSION=v6.3.5-permissive
+ENV DSBASE_VERSION=perf-batch-1-permissive
 
 ENV ROCK_LIB=/var/lib/rock/R/library
 

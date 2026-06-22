@@ -1,6 +1,6 @@
 services:
   devel-permissive:
-    image: datashield/rock_devel-permissive:1.1.0
+    image: datashield/rock_devel-permissive:2.0.0
     #build: .
     ports:
       - ${PORT}:8085

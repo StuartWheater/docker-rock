@@ -5,7 +5,7 @@
 docker_compose_file=docker-compose.yml
 no_cache=true
 name=datashield/rock_devel
-tag=1.1.0
+tag=2.0.0
 
 # Build Docker image
 build-image:
