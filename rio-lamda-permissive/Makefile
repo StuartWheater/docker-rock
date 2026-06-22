@@ -4,13 +4,12 @@
 
 docker_compose_file=docker-compose.yml
 no_cache=true
-name=datashield/molgenis-rock-base
-tag=4.1.0
-date:=$(shell date --rfc-3339=seconds)
+name=datashield/rock-rio-lamda-permissive
+tag=latest
 
 # Build Docker image
 build-image:
-	docker build --no-cache=$(no_cache) --label "org.opencontainers.image.created=${date}" --label "org.opencontainers.image.version=${tag}" -t="${name}:$(tag)" .
+	docker build --no-cache=$(no_cache) -t="${name}:$(tag)" .
 
 push-image:
 	docker image push ${name}:$(tag)
