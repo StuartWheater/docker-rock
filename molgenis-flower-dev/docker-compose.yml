@@ -1,6 +1,6 @@
 services:
-  devel-permissive:
-    image: datashield/rock_devel-permissive:2.0.0
+  molgenis-flower-dev:
+    image: datashield/molgenis-flower-dev:1.0.0
     #build: .
     ports:
       - ${PORT}:8085

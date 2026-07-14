@@ -4,12 +4,13 @@
 
 docker_compose_file=docker-compose.yml
 no_cache=true
-name=datashield/rock_devel
-tag=2.0.0
+name=datashield/molgenis-rock-base-permissive
+tag=secure
+date:=$(shell date --rfc-3339=seconds)
 
 # Build Docker image
 build-image:
-	docker build --no-cache=$(no_cache) -t="${name}:$(tag)" .
+	docker build --no-cache=$(no_cache) --label "org.opencontainers.image.created=${date}" --label "org.opencontainers.image.version=${tag}" -t="${name}:$(tag)" --progress=plain --policy log-level=debug .
 
 push-image:
 	docker image push ${name}:$(tag)

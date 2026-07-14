@@ -4,8 +4,8 @@
 
 docker_compose_file=docker-compose.yml
 no_cache=true
-name=datashield/molgenis-rock-base
-tag=4.0.0
+name=datashield/molgenis-flower-dev
+tag=1.0.0
 date:=$(shell date --rfc-3339=seconds)
 
 # Build Docker image
